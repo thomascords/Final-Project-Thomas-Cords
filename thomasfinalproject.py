@@ -17,3 +17,8 @@ productInfo.append(customProduct.productID)
 productInfo.append(customProduct.brand)
 productInfo.append(customProduct.price)
 print(productInfo)#testing if it works
+
+try:
+    file = open("FinalExam.txt","x")#creating the file if it does not exist
+except:
+    file = open("FinalExam.txt", "w")#opening the file if it already exists
