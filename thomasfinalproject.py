@@ -33,10 +33,6 @@ while totalRuns > 0:
     print(productInfo)
     totalRuns = totalRuns -1
     print(totalRuns)
-    printOut=(" Product #"+str(productNumber)+ " ,"+productInfo[0]+", "+ productInfo[2]+ " ," + productInfo[3])
+    printOut=(" Product #"+str(productNumber)+ ": ,"+productInfo[0] +", "+productInfo[1]+", "+ productInfo[2]+ " ," + productInfo[3])
+    print(end="\n")
     file.write(printOut)
-
-
-
-
-
