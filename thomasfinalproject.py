@@ -5,11 +5,12 @@ class Product:
         self.brand = brand
         self.price = price
 try:
-    file = open("FinalExam.txt","x")#creating the file if it does not exist
+    file = open("C:\FinalExam\FinalExam.txt","x")#creating the file if it does not exist
 except:
-    file = open("FinalExam.txt", "w")#opening the file if it already exists
+    file = open("C:\FinalExam\FinalExam.txt", "w")#opening the file if it already exists
 loop = 0
 totalRuns = 0
+productNumber = 1
 while loop == 0:
     try:
         totalRuns = int(input("Please enter the amount of products you would like to enter: "))
@@ -32,5 +33,10 @@ while totalRuns > 0:
     print(productInfo)
     totalRuns = totalRuns -1
     print(totalRuns)
+    printOut=(" Product #"+str(productNumber)+ " ,"+productInfo[0]+", "+ productInfo[2]+ " ," + productInfo[3])
+    file.write(printOut)
+
+
+
 
 
